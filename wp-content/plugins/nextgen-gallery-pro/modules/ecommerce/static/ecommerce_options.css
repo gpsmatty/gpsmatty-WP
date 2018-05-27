@@ -1,0 +1,86 @@
+#ngg-mail_content input[type=text],
+#ngg-mail_content textarea {
+    width: 500px;
+    max-width: 100%;
+}
+
+#ngg-mail_content textarea {
+    height: 100px;
+}
+#ngg-ecommerce-options_content td,
+#ngg-mail_content td {
+    vertical-align: top;
+}
+
+#ngg-payment-gateways_content input[type=text],
+#ngg-payment-gateways_content input[type=password]{
+    width: 450px;
+    max-width: 100%;
+}
+
+#ecommerce_not_for_sale_msg {
+	color: #777;
+    width: 400px;
+    max-width: 100%;
+    height: 100px;
+    padding: 5px 8px;
+}
+
+#ngg-ecommerce-options_content td select {
+    width: 100%;
+}
+
+#ecommerce_tax_rate {
+    width: 70px;
+    text-align: center;
+}
+
+#ecommerce_email_notification_body, 
+#ecommerce_email_receipt_body {
+	color: #777;
+	height: 150px;
+	width: 400px;
+    max-width: 100%;
+	padding: 5px 8px;
+	margin-bottom: -5px;
+}
+
+div[data-id="ngg-payment-gateways"] table {
+    table-layout: fixed;
+}
+
+#tr_ecommerce_test_gateway_enable,
+#tr_ecommerce_cheque_enable,
+#tr_ecommerce_stripe_enable,
+#tr_ecommerce_paypal_enable,
+#tr_ecommerce_paypal_std_enable {
+	background-color: #38576f !important;
+	margin-top: 10px;
+}
+
+#tr_ecommerce_test_gateway_enable label,
+#tr_ecommerce_cheque_enable label,
+#tr_ecommerce_stripe_enable label,
+#tr_ecommerce_paypal_enable label,
+#tr_ecommerce_paypal_std_enable label {
+	color: #fff !important;
+	font-size: 15px !important;
+}
+
+#ngg_page_content.ngg_settings_page .ngg_page_content_main #tr_ecommerce_test_gateway_enable input[type="radio"]:checked:before,
+#ngg_page_content.ngg_settings_page .ngg_page_content_main #tr_ecommerce_cheque_enable input[type="radio"]:checked:before,
+#ngg_page_content.ngg_settings_page .ngg_page_content_main #tr_ecommerce_stripe_enable input[type="radio"]:checked:before,
+#ngg_page_content.ngg_settings_page .ngg_page_content_main #tr_ecommerce_paypal_enable input[type="radio"]:checked:before,
+#ngg_page_content.ngg_settings_page .ngg_page_content_main #tr_ecommerce_paypal_std_enable input[type="radio"]:checked:before {
+    margin: -1px 0 0 -1px;
+}
+
+@media (max-width: 800px) {
+    #ecommerce_not_for_sale_msg,
+    #ecommerce_email_notification_body, 
+    #ecommerce_email_receipt_body,
+    #ecommerce_cheque_instructions {
+        width: 300px !important;
+        max-width: 90% !important;
+    }
+}
